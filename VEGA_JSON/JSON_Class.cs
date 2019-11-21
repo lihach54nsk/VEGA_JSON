@@ -17,4 +17,14 @@ namespace VEGA_JSON
             this.password = password;
         }
     }
+
+    class CMD
+    {
+        string cmd;
+
+        public CMD(string cmd)
+        {
+            this.cmd = cmd;
+        }
+    }
 }

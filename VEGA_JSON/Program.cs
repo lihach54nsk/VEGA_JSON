@@ -10,8 +10,11 @@ namespace VEGA_JSON
     {
         static void Main(string[] args)
         {
-            Auth auth = new Auth("auth_req", "root", "123");
-            string sending = JsonConvert.SerializeObject(auth);
+            Console.WriteLine("HELLO AWS!");
+           /* Auth auth = new Auth("auth_req", "root", "123");
+            CMD cmd = new CMD("get_users_req");
+
+            string sending = JsonConvert.SerializeObject(cmd);
             byte[] data = System.Text.Encoding.UTF8.GetBytes(sending);
 
             TcpClient tcpClient = new TcpClient();
@@ -25,7 +28,7 @@ namespace VEGA_JSON
             byte[] dataread = new byte[1000];
             var read = networkStream.Read(dataread, 0, dataread.Length);
             Console.WriteLine(System.Text.Encoding.UTF8.GetString(dataread, 0, read));
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
 
         static void Listen(NetworkStream networkStream)

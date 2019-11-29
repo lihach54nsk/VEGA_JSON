@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace VEGA_JSON
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world!");
         }
-
-        static string Listen(NetworkStream networkStream) => "I am alive!";
+       public static string Listen() => "I am alive!";
     }
 }

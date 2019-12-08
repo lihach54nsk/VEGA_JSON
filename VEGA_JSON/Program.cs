@@ -10,7 +10,7 @@ namespace VEGA_JSON
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HELLO AWS!");
+            /*Console.WriteLine("HELLO AWS!");
             Auth auth = new Auth("auth_req", "root", "123");
             CMD cmd = new CMD("get_users_req");
 
@@ -22,13 +22,13 @@ namespace VEGA_JSON
 
             NetworkStream networkStream = tcpClient.GetStream();
             //var task = Task.Factory.StartNew(() => Listen(networkStream));
-            networkStream.Write(data, 0, data.Length);
+            networkStream.Write(data, 0, data.Length);*/
 
             Console.WriteLine("SENT");
-            byte[] dataread = new byte[1000];
+            /*byte[] dataread = new byte[1000];
             var read = networkStream.Read(dataread, 0, dataread.Length);
             Console.WriteLine(System.Text.Encoding.UTF8.GetString(dataread, 0, read));
-            Console.ReadLine();
+            Console.ReadLine();*/
         }
 
         static void Listen(NetworkStream networkStream)
